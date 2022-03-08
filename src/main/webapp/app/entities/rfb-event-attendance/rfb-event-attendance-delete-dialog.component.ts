@@ -36,7 +36,7 @@ export class RfbEventAttendanceDeleteDialogComponent {
             });
             this.activeModal.dismiss(true);
         });
-        this.alertService.success(`A Rfb Event Attendance is deleted with identifier ${id}`, null, null);
+        this.alertService.success(`A Event Attendance is deleted with identifier ${id}`, null, null);
     }
 }
 

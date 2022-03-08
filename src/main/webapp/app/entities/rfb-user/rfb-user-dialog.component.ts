@@ -73,8 +73,8 @@ export class RfbUserDialogComponent implements OnInit {
 
     private onSaveSuccess(result: RfbUser, isCreated: boolean) {
         this.alertService.success(
-            isCreated ? `A new Rfb User is created with identifier ${result.id}`
-            : `A Rfb User is updated with identifier ${result.id}`,
+            isCreated ? `A new User is created with identifier ${result.id}`
+            : `A User is updated with identifier ${result.id}`,
             null, null);
 
         this.eventManager.broadcast({ name: 'rfbUserListModification', content: 'OK'});

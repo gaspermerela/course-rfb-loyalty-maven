@@ -36,7 +36,7 @@ export class RfbLocationDeleteDialogComponent {
             });
             this.activeModal.dismiss(true);
         });
-        this.alertService.success(`A Rfb Location is deleted with identifier ${id}`, null, null);
+        this.alertService.success(`A Location is deleted with identifier ${id}`, null, null);
     }
 }
 

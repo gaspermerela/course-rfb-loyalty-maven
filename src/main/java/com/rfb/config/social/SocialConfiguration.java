@@ -83,7 +83,7 @@ public class SocialConfiguration implements SocialConfigurer {
         String facebookClientId = environment.getProperty("spring.social.facebook.client-id");
         String facebookClientSecret = environment.getProperty("spring.social.facebook.client-secret");
         if (facebookClientId != null && facebookClientSecret != null) {
-            log.debug("Configuring FacebookConnectionFactory");
+            log.debug("Configuring FacebookConnectionFactory facebookClientId = " + facebookClientId + " facebookClientSecret = " + facebookClientSecret);
             connectionFactoryConfigurer.addConnectionFactory(
                 new FacebookConnectionFactory(
                     facebookClientId,

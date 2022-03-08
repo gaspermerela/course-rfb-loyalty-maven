@@ -69,8 +69,8 @@ export class RfbEventAttendanceDialogComponent implements OnInit {
 
     private onSaveSuccess(result: RfbEventAttendance, isCreated: boolean) {
         this.alertService.success(
-            isCreated ? `A new Rfb Event Attendance is created with identifier ${result.id}`
-            : `A Rfb Event Attendance is updated with identifier ${result.id}`,
+            isCreated ? `A new Event Attendance is created with identifier ${result.id}`
+            : `A Event Attendance is updated with identifier ${result.id}`,
             null, null);
 
         this.eventManager.broadcast({ name: 'rfbEventAttendanceListModification', content: 'OK'});

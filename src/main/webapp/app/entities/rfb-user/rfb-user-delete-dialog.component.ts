@@ -36,7 +36,7 @@ export class RfbUserDeleteDialogComponent {
             });
             this.activeModal.dismiss(true);
         });
-        this.alertService.success(`A Rfb User is deleted with identifier ${id}`, null, null);
+        this.alertService.success(`A User is deleted with identifier ${id}`, null, null);
     }
 }
 

@@ -36,7 +36,7 @@ export class RfbEventDeleteDialogComponent {
             });
             this.activeModal.dismiss(true);
         });
-        this.alertService.success(`A Rfb Event is deleted with identifier ${id}`, null, null);
+        this.alertService.success(`A Event is deleted with identifier ${id}`, null, null);
     }
 }
 

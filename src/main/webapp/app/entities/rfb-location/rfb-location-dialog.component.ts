@@ -55,8 +55,8 @@ export class RfbLocationDialogComponent implements OnInit {
 
     private onSaveSuccess(result: RfbLocation, isCreated: boolean) {
         this.alertService.success(
-            isCreated ? `A new Rfb Location is created with identifier ${result.id}`
-            : `A Rfb Location is updated with identifier ${result.id}`,
+            isCreated ? `A new Location is created with identifier ${result.id}`
+            : `A Location is updated with identifier ${result.id}`,
             null, null);
 
         this.eventManager.broadcast({ name: 'rfbLocationListModification', content: 'OK'});
