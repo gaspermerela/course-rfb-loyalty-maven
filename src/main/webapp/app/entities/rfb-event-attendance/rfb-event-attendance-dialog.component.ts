@@ -40,7 +40,7 @@ export class RfbEventAttendanceDialogComponent implements OnInit {
 
     ngOnInit() {
         this.isSaving = false;
-        this.authorities = ['ROLE_USER', 'ROLE_ADMIN'];
+        this.authorities = ['ROLE_RUNNER', 'ROLE_ADMIN'];
         this.rfbEventService.query()
             .subscribe((res: ResponseWrapper) => { this.rfbevents = res.json; }, (res: ResponseWrapper) => this.onError(res.json));
         this.rfbUserService.query()

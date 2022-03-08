@@ -36,7 +36,7 @@ export class RfbEventDialogComponent implements OnInit {
 
     ngOnInit() {
         this.isSaving = false;
-        this.authorities = ['ROLE_USER', 'ROLE_ADMIN'];
+        this.authorities = ['ROLE_RUNNER', 'ROLE_ADMIN'];
         this.rfbLocationService.query()
             .subscribe((res: ResponseWrapper) => { this.rfblocations = res.json; }, (res: ResponseWrapper) => this.onError(res.json));
     }

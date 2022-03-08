@@ -35,7 +35,7 @@ export class RfbUserDialogComponent implements OnInit {
 
     ngOnInit() {
         this.isSaving = false;
-        this.authorities = ['ROLE_USER', 'ROLE_ADMIN'];
+        this.authorities = ['ROLE_RUNNER', 'ROLE_ADMIN'];
         this.rfbLocationService
             .query({filter: 'rfbuser-is-null'})
             .subscribe((res: ResponseWrapper) => {
